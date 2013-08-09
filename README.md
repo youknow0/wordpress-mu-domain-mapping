@@ -10,8 +10,10 @@ Usage
 
 1. Go through the usual install process of a Wordpress network with domain mapping. These steps are well documented at https://wordpress.org/plugins/wordpress-mu-domain-mapping/installation/
 1. Edit your wp-config.php to force admin SSL. Replace example.org with the domain of your administration backend.
-	if(!empty($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] == 'example.org') {
-		define('FORCE_SSL_ADMIN', true);
-	}
+<pre>
+    if(!empty($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] == 'example.org') {
+    	define('FORCE_SSL_ADMIN', true);
+    }
+</pre>
 1. In the Domain mapping settings leave everything but "Redirect administration pages to site’s original domain" unchecked
 
